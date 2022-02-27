@@ -1,9 +1,9 @@
-import Layout from './sharedComponents/Layout';
+import Counter from './sharedComponents/Counter';
 import './App.css';
 
 function App() {
   return (
-    <Layout></Layout>
+    <Counter></Counter>
   );
 }
 
