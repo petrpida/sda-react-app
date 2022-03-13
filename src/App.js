@@ -11,7 +11,14 @@ function App() {
       {/* <Button buttonName="button 1" disableCounter={true}/> */}
       {/* <Button buttonName="button 2" disableCounter={false}/> */}
       {/* <Button buttonName="button 3" disableCounter={false}/> */}
-          <MyButtonList buttonsNames={["load", "send", "reset"]} disableCounters={false}/>
+      <MyButtonList
+        buttonsObject={[
+          { text: "load", disableCounter: true },
+          { text: "send", disableCounter: false },
+          { text: "reset", disableCounter: true },
+          { text: "cancel", disableCounter: false }
+        ]}
+      />
     </div>
   );
 }

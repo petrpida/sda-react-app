@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Button from "../MyButton";
 
-export default function MyButtonList({ buttonsNames, disableCounters }) {
+export default function MyButtonList({ buttonsObject }) {
   let buttons = [];
   let [totalCount, setTotalCount] = useState(0);
 
-  for (let i = 0; i < buttonsNames.length; i++) {
+  for (let i = 0; i < buttonsObject.length; i++) {
     buttons.push(
       <Button
-        buttonName={buttonsNames[i]}
-        disableCounter={disableCounters}
+        buttonName={buttonsObject[i].text}
+        disableCounter={buttonsObject[i].disableCounter}
         onClick={function () {
           totalCount = totalCount + 1;
           setTotalCount(totalCount);
