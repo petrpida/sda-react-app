@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-export default function Button({ buttonName, disableCounter }) {
+export default function Button({ buttonName, disableCounter, onClick }) {
   let [counter, setCounter] = useState(0)
   
 
@@ -11,11 +11,12 @@ export default function Button({ buttonName, disableCounter }) {
         counter = counter + 1
         // console.log(counter)
         setCounter(counter)
+        onClick()
       }}
     >
       {buttonName}
     </button>
-    {(disableCounter === false ? <p>na {buttonName} bylo kliknuto {counter}x</p> : <p></p>)}
+    {(disableCounter === false ? <p>na tlacitko {buttonName} bylo kliknuto {counter}x</p> : <p></p>)}
     
     </div>
   );
