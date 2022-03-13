@@ -11,7 +11,7 @@ function App() {
       {/* <Button buttonName="button 1" disableCounter={true}/> */}
       {/* <Button buttonName="button 2" disableCounter={false}/> */}
       {/* <Button buttonName="button 3" disableCounter={false}/> */}
-          <MyButtonList buttonsCount={10} disableCounters={false}/>
+          <MyButtonList buttonsNames={["load", "send", "reset"]} disableCounters={false}/>
     </div>
   );
 }

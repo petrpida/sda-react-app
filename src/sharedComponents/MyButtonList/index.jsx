@@ -1,11 +1,10 @@
 import React from "react";
 import Button from "../MyButton";
 
-export default function MyButtonList({buttonsCount, disableCounters}) {
-    const buttons = []
-    for (let i = 0; i < buttonsCount; i++) {
-        buttons.push(<Button buttonName={"button " + (i + 1)} disableCounter={disableCounters} />)
+export default function MyButtonList({buttonsNames, disableCounters}) {
+    let buttons = []
+    for (let i = 0; i < buttonsNames.length; i++) {
+        buttons.push(<Button buttonName={buttonsNames[i]} disableCounter={disableCounters} />)
     }
-
     return buttons
 }

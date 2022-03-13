@@ -2,7 +2,6 @@ import React, {useState} from "react";
 
 export default function Button({ buttonName, disableCounter }) {
   let [counter, setCounter] = useState(0)
-  console.log(counter)
   
 
   return (
