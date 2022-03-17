@@ -62,3 +62,18 @@ ol, ul {
 .game-info {
   margin-left: 20px;
 }
+
+.myTable td {
+  border: black 1px solid;
+  padding: 2px;
+}
+
+.myTable th {
+  border: black 2px solid;
+  padding: 5px;
+  background-color: rgb(241, 101, 101);
+}
+
+.myTable tbody > tr :nth-child(even) {
+  background-color: rgb(158, 155, 155);
+}
