@@ -2,7 +2,8 @@
 // import Menu from './sharedComponents/Menu';
 // import Button from "./sharedComponents/MyButton";
 // import MyButtonList from "./sharedComponents/MyButtonList";
-import Table from "./sharedComponents/Table/indes";
+import Table from "./sharedComponents/Table";
+import TableRow from "./sharedComponents/TableRow";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           { text: "cancel", disableCounter: false }
         ]}
       /> */}
-      <Table rows={12} columns={4}/>
+      <Table rows={7} columns={7}/>
     </div>
   );
 }
