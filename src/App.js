@@ -7,7 +7,9 @@ import Table from "./sharedComponents/Table";
 import Home from './sharedComponents/Home';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import News from './sharedComponents/News';
-import NewsDetail from './sharedComponents/NewsDetail';
+//import NewsDetail from './sharedComponents/NewsDetail';
+import SignInForm from './sharedComponents/SignInForm';
+import NewsEditForm from './sharedComponents/NewsEditForm';
 
 function App() {
   return (
@@ -29,8 +31,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/form" element={<SignInForm/>}/>
           <Route exact path="/news" element={<News/>}/>
-          <Route path="/news/:id" element={<NewsDetail/>} />
+          <Route path="/news/:id" element={<NewsEditForm/>} />
           <Route exact path="/tictactoe" element={<Game gameName="TicTacToe" players={2}/>}/>
           <Route exact path="/menu" element={<Menu menuName="SDA" menuItems={["odkaz1", "odkaz2", "odkaz3"]}/>}/>
           <Route exact path="/table" element={<Table rows={5} columns={6} />} />
