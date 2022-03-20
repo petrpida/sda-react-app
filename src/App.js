@@ -10,6 +10,7 @@ import News from './sharedComponents/News';
 //import NewsDetail from './sharedComponents/NewsDetail';
 import SignInForm from './sharedComponents/SignInForm';
 import NewsEditForm from './sharedComponents/NewsEditForm';
+import Alert from './sharedComponents/Alert';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       {/* <Table rows={6} columns={4}/> */}
       <Router>
         <Routes>
+          <Route exact path="/alert/:id" element={<Alert show={true} text="text of alert" color={"red"}/>}/>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/form" element={<SignInForm/>}/>
           <Route exact path="/news" element={<News/>}/>
