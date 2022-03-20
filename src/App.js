@@ -11,6 +11,7 @@ import News from './sharedComponents/News';
 import SignInForm from './sharedComponents/SignInForm';
 import NewsEditForm from './sharedComponents/NewsEditForm';
 import Alert from './sharedComponents/Alert';
+import Joke from './sharedComponents/Joke';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route exact path="/alert/:id" element={<Alert show={true} text="text of alert" color={"red"}/>}/>
           <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/joke" element={<Joke/>}/>
           <Route exact path="/form" element={<SignInForm/>}/>
           <Route exact path="/news" element={<News/>}/>
           <Route path="/news/:id" element={<NewsEditForm/>} />
