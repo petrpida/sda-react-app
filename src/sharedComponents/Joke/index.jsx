@@ -1,9 +1,8 @@
 import React, { useEffect, useState} from "react";
+import { Link } from 'react-router-dom'
 
 export default function Joke() {
     const [joke, setJoke] = useState("")
-    const [icon, setIcon] = useState()
-
     
     useEffect(function() {
         fetch("https://api.chucknorris.io/jokes/random")
@@ -11,7 +10,6 @@ export default function Joke() {
                 response.json()
                     .then(function (data) {
                         setJoke(data.value)
-                        setIcon(data.icon_url)
                     })
             }).catch(function() {
                 setJoke("ERROR")
@@ -20,6 +18,9 @@ export default function Joke() {
 
     return (
     <div>
-        {icon && <img src={icon}/>}
-        {joke}</div>)
+        <h2>{joke}</h2>
+        <button className="menu">
+          <Link to="/">HOME</Link>
+        </button>
+        </div>)
 }

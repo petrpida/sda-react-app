@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../MyButton";
+import {Link} from 'react-router-dom'
 
 export default function MyButtonList({ buttonsObject }) {
   let buttons = [];
@@ -22,6 +23,7 @@ export default function MyButtonList({ buttonsObject }) {
     <div>
       {buttons}
       <p>dohromady bylo kliknuto: {totalCount}x</p>
+      <button className="menu"><Link to="/">HOME</Link></button>
     </div>
   );
 }

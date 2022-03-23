@@ -8,6 +8,9 @@ export default function News() {
             <Link to="/news/1"> news 1 </Link>
             <Link to="/news/2"> news 2 </Link>
             <Link to="/news/3"> news 3 </Link>
+            <button className="menu">
+          <Link to="/">HOME</Link>
+        </button>
         </div>
     )
 }

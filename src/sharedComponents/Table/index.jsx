@@ -1,5 +1,6 @@
 import React from "react";
 import TableRow from "../TableRow";
+import {Link} from 'react-router-dom'
 
 export default function Table({rows, columns}) {
     let ths = []
@@ -15,6 +16,7 @@ export default function Table({rows, columns}) {
         }
 
   return (
+    <div>
     <div className="myTable">
       <table>
         <thead>
@@ -26,6 +28,10 @@ export default function Table({rows, columns}) {
             {trs}
         </tbody>
       </table>
+    </div>
+    <button className="menu">
+          <Link to="/">HOME</Link>
+        </button>
     </div>
   );
 }

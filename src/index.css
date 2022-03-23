@@ -65,13 +65,13 @@ ol, ul {
 
 .myTable td {
   border: black 1px solid;
-  padding: 2px;
+  padding: 10px;
 }
 
 .myTable th {
   border: black 2px solid;
-  padding: 5px;
-  background-color: rgb(106, 236, 79);
+  padding: 10px;
+  background-color: rgb(146, 223, 130);
 }
 
 .myTable tbody > :nth-child(even) {
@@ -79,5 +79,27 @@ ol, ul {
 }
 
 .myTable tbody > tr:hover {
-  background-color: gold;
+  background-color: rgb(255, 219, 16);
+}
+
+.menu {
+  padding: 5px;
+  margin: 10px;
+  display: block;
+  border-radius: 10px;
+  background-color: aqua;
+  width: 200px;
+}
+
+.menu:hover {
+  background-color: rgb(9, 214, 214);
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }

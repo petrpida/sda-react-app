@@ -1,6 +1,6 @@
 import Game from './sharedComponents/TicTacToe/Game';
 import Menu from './sharedComponents/Menu';
-// import Button from "./sharedComponents/MyButton";
+//import Button from "./sharedComponents/MyButton";
 import MyButtonList from "./sharedComponents/MyButtonList";
 import Table from "./sharedComponents/Table";
 //import TableRow from "./sharedComponents/TableRow";
@@ -12,6 +12,7 @@ import SignInForm from './sharedComponents/SignInForm';
 import NewsEditForm from './sharedComponents/NewsEditForm';
 import Alert from './sharedComponents/Alert';
 import Joke from './sharedComponents/Joke';
+import Counter from './sharedComponents/Counter';
 
 function App() {
   return (
@@ -34,20 +35,21 @@ function App() {
         <Routes>
           <Route exact path="/alert/:id" element={<Alert show={true} text="text of alert" color={"red"}/>}/>
           <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/counter" element={<Counter/>}/>
           <Route exact path="/joke" element={<Joke/>}/>
           <Route exact path="/form" element={<SignInForm/>}/>
           <Route exact path="/news" element={<News/>}/>
           <Route path="/news/:id" element={<NewsEditForm/>} />
           <Route exact path="/tictactoe" element={<Game gameName="TicTacToe" players={2}/>}/>
           <Route exact path="/menu" element={<Menu menuName="SDA" menuItems={["odkaz1", "odkaz2", "odkaz3"]}/>}/>
-          <Route exact path="/table" element={<Table rows={5} columns={6} />} />
+          <Route exact path="/table" element={<Table rows={3} columns={9} />} />
           <Route
             path="/buttons"
             element={
               <MyButtonList
                 buttonsObject={[
                   { text: "load", disableCounter: true },
-                  { text: "send", disableCounter: false },
+                  { text: "send", disableCounter: true },
                   { text: "reset", disableCounter: true },
                   { text: "cancel", disableCounter: false }
                 ]}

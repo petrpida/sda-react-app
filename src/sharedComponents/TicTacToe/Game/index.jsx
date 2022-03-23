@@ -1,9 +1,11 @@
 import React from 'react';
 import Board from '../Board';
+import { Link } from 'react-router-dom';
 
 export default function Game ({ gameName, players }) {
   
   return (
+    <div>
     <div className="game">
       <div className="game-board">
         <Board />
@@ -13,5 +15,9 @@ export default function Game ({ gameName, players }) {
         <ol>{/* TODO */}</ol>
       </div>
     </div>
+    <button className="menu">
+    <Link to="/">HOME</Link>
+  </button>
+  </div>
   );
 }

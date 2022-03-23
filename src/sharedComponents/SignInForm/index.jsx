@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 export default function SignInForm() {
     const navigate = useNavigate()
@@ -8,7 +8,7 @@ export default function SignInForm() {
     const [rememberMe, setRememberMe] = useState(false);
 
     return (
-        <div>form
+        <div>
             <input placeholder="username" type="text" onChange={function (event) {
                 setUserName(event.target.value)
             }} />
@@ -19,9 +19,12 @@ export default function SignInForm() {
                 setRememberMe(event.target.checked)
             }}/>
             <button onClick={function () {
-                console.log({username, password, rememberMe});
-                navigate("/")
+                window.alert(`Your username is ${username} and your password is ${password}`);
+                //navigate("/")
             }}>SIGN IN</button>
+            <button className="menu">
+          <Link to="/">HOME</Link>
+        </button>
         </div>
     )
 }
