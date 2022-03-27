@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom'
-
+import NavButton from "../NavButton";
 
 export default function Menu({ menuName, menuItems }) {
   const [activeItem, setActiveItem] = useState(menuItems[0]);
@@ -24,9 +23,7 @@ export default function Menu({ menuName, menuItems }) {
         ))}
       </ul>
     </nav>
-    <button className="menu">
-    <Link to="/">HOME</Link>
-  </button>
+    <NavButton name="HOME" link="/" />
   </div>
   );
 }

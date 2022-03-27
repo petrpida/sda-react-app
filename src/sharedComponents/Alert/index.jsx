@@ -1,5 +1,6 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import NavButton from "../NavButton";
 
 export default function Alert({ show, text, color }) {
   let backgroundColor = "";
@@ -19,18 +20,14 @@ export default function Alert({ show, text, color }) {
         <div className={backgroundColor} role="alert">
           This is alert no.{params.id}: <br /> <br /> "{text}"
         </div>
-        <button className="menu">
-          <Link to="/">HOME</Link>
-        </button>
+        <NavButton name="HOME" link="/"/>
       </div>
     );
   } else {
     return (
       <div>
         <p>no show</p>
-        <button className="menu">
-          <Link to="/">HOME</Link>
-        </button>
+        <NavButton name="HOME" link="/"/>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import NavButton from "../NavButton";
 
 export default function SignInForm() {
     const navigate = useNavigate()
@@ -22,9 +23,7 @@ export default function SignInForm() {
                 window.alert(`Your username is ${username} and your password is ${password}`);
                 //navigate("/")
             }}>SIGN IN</button>
-            <button className="menu">
-          <Link to="/">HOME</Link>
-        </button>
+            <NavButton name="HOME" link="/" />
         </div>
     )
 }

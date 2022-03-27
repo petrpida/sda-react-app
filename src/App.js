@@ -13,7 +13,7 @@ import NewsEditForm from './sharedComponents/NewsEditForm';
 import Alert from './sharedComponents/Alert';
 import Joke from './sharedComponents/Joke';
 import Counter from './sharedComponents/Counter';
-import Search from './sharedComponents/searchFilter';
+import Search from './sharedComponents/SearchFilter';
 
 function App() {
   return (

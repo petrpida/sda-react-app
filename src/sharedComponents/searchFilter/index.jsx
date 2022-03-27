@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import NavButton from "../NavButton";
 
 export default function Search({ values }) {
   let [inputValue, setInputValue] = useState("");
@@ -18,9 +18,7 @@ export default function Search({ values }) {
             {renderArray.map((item) => (<li>{item}</li>))}
         </ul>
 
-      <button className="menu">
-        <Link to="/">HOME</Link>
-      </button>
+        <NavButton name="HOME" link="/" />
     </div>
   );
 }

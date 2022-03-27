@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom'
+import NavButton from "../NavButton";
 
 function Counter() {
   const state = useState(0);
@@ -28,9 +28,7 @@ function Counter() {
         </button>
         <h1>{counter}</h1>
       </div>
-      <button className="menu">
-          <Link to="/">HOME</Link>
-        </button>
+      <NavButton name="HOME" link="/"/>
     </div>
   );
 }

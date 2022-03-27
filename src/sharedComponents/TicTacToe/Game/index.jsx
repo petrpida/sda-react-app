@@ -1,6 +1,6 @@
 import React from 'react';
 import Board from '../Board';
-import { Link } from 'react-router-dom';
+import NavButton from '../../NavButton';
 
 export default function Game ({ gameName, players }) {
   
@@ -15,9 +15,7 @@ export default function Game ({ gameName, players }) {
         <ol>{/* TODO */}</ol>
       </div>
     </div>
-    <button className="menu">
-    <Link to="/">HOME</Link>
-  </button>
+    <NavButton name="HOME" link="/" />
   </div>
   );
 }

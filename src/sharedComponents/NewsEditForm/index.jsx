@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getNewsDetail, setNewsDetail } from '../../serverMock'
+import NavButton from '../NavButton';
 
 export default function NewsEditForm() {
   const params = useParams();
@@ -46,9 +47,7 @@ export default function NewsEditForm() {
         }}>
         Save
       </button>
-      <button className="menu">
-          <Link to="/">HOME</Link>
-        </button>
+      <NavButton name="HOME" link="/" />
     </div>
   );
 }
