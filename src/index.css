@@ -103,3 +103,7 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+.search {
+  list-style-type: none;
+}

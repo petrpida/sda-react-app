@@ -36,6 +36,9 @@ export default function Home() {
         <Link to="/tictactoe">TicTacToe</Link>
       </button>
       <button className="menu">
+          <Link to="/search">Search Filter</Link>
+      </button>
+      <button className="menu">
           <Link to="/training">React Training</Link>
       </button>
     </div>

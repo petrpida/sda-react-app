@@ -13,6 +13,7 @@ import NewsEditForm from './sharedComponents/NewsEditForm';
 import Alert from './sharedComponents/Alert';
 import Joke from './sharedComponents/Joke';
 import Counter from './sharedComponents/Counter';
+import Search from './sharedComponents/searchFilter';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
               />
             }
           />
+          <Route exact path="/search" element={<Search values={["banana", "apple", "pinapple", "orange", "watermelon", "mango"]}/>}/>
         </Routes>
       </Router>
     </div>
