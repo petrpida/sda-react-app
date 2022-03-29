@@ -107,3 +107,35 @@ a:hover {
 .search {
   list-style-type: none;
 }
+
+.ex1 {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.ex2 {
+  margin: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(255, 177, 75);
+}
+
+.ex2:hover {
+  background-color: rgb(255, 123, 0);
+}
+
+.ex3 {
+  margin: 20px 10px;
+  border-radius: 7px;
+}
+
+.ex3:hover {
+  background-color: rgb(211, 211, 211);
+}
+

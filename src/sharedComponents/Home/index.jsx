@@ -17,7 +17,7 @@ export default function Home() {
       <NavButton name="Table" link="/table"/>
       <NavButton name="TicTacToe" link="/tictactoe"/>
       <NavButton name="Search Filter" link="/search"/>
-      <NavButton name="React Training" link="/training"/>
+      <NavButton name="React Training" link="/reacttraining"/>
     </div>
   );
 }

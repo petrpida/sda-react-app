@@ -14,6 +14,10 @@ import Alert from './sharedComponents/Alert';
 import Joke from './sharedComponents/Joke';
 import Counter from './sharedComponents/Counter';
 import Search from './sharedComponents/SearchFilter';
+import ReactTraning from './sharedComponents/ReactTraining';
+import Exercise1 from './sharedComponents/ReactTraining/exercise1';
+import Exercise2 from './sharedComponents/ReactTraining/exercise2';
+import Exercise3 from './sharedComponents/ReactTraining/exercise3';
 
 function App() {
   return (
@@ -58,6 +62,12 @@ function App() {
             }
           />
           <Route exact path="/search" element={<Search values={["banana", "apple", "pinapple", "orange", "watermelon", "mango"]}/>}/>
+          <Route exact path="/reacttraining" element={<ReactTraning/>}/>
+          <Route exact path="/reacttraining/exercise1" element={<Exercise1/>}/>
+          <Route exact path="/reacttraining/exercise2" element={<Exercise2/>}/>
+          <Route exact path="/reacttraining/exercise3" element={<Exercise3/>}/>
+
+          
         </Routes>
       </Router>
     </div>
