@@ -18,6 +18,7 @@ import ReactTraning from './sharedComponents/ReactTraining';
 import Exercise1 from './sharedComponents/ReactTraining/exercise1';
 import Exercise2 from './sharedComponents/ReactTraining/exercise2';
 import Exercise3 from './sharedComponents/ReactTraining/exercise3';
+import Weather from './sharedComponents/Weather';
 
 function App() {
   return (
@@ -61,7 +62,9 @@ function App() {
               />
             }
           />
-          <Route exact path="/search" element={<Search values={["banana", "apple", "pinapple", "orange", "watermelon", "mango"]}/>}/>
+          <Route exact path="/weather" element={<Weather/>}/>
+
+          <Route exact path="/search" element={<Search values={["Banana", "Apple", "Pinapple", "Orange", "Watermelon", "Mango"]}/>}/>
           <Route exact path="/reacttraining" element={<ReactTraning/>}/>
           <Route exact path="/reacttraining/exercise1" element={<Exercise1/>}/>
           <Route exact path="/reacttraining/exercise2" element={<Exercise2/>}/>

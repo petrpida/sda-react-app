@@ -18,6 +18,8 @@ export default function Home() {
       <NavButton name="TicTacToe" link="/tictactoe"/>
       <NavButton name="Search Filter" link="/search"/>
       <NavButton name="React Training" link="/reacttraining"/>
+      <NavButton name="Weather App" link="/weather"/>
+
     </div>
   );
 }
