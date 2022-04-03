@@ -19,6 +19,8 @@ import Exercise1 from './sharedComponents/ReactTraining/exercise1';
 import Exercise2 from './sharedComponents/ReactTraining/exercise2';
 import Exercise3 from './sharedComponents/ReactTraining/exercise3';
 import Weather from './sharedComponents/Weather';
+import PhoneInput from './sharedComponents/PhoneInput';
+import ToDoList from './sharedComponents/ToDoList';
 
 function App() {
   return (
@@ -69,6 +71,12 @@ function App() {
           <Route exact path="/reacttraining/exercise1" element={<Exercise1/>}/>
           <Route exact path="/reacttraining/exercise2" element={<Exercise2/>}/>
           <Route exact path="/reacttraining/exercise3" element={<Exercise3/>}/>
+
+          <Route exact path="/phone" element={<PhoneInput/>}/>
+          <Route exact path="/todo" element={<ToDoList/>}/>
+
+
+
 
           
         </Routes>

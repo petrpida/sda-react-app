@@ -19,6 +19,9 @@ export default function Home() {
       <NavButton name="Search Filter" link="/search"/>
       <NavButton name="React Training" link="/reacttraining"/>
       <NavButton name="Weather App" link="/weather"/>
+      <NavButton name="Phone number validation" link="/phone"/>
+      <NavButton name="ToDo List" link="/todo"/>
+
 
     </div>
   );

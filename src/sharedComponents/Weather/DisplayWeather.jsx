@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function DisplayWeather({ data }) {
-  console.log(data);
   return (
     <div>
       <div className="overall">

@@ -13,7 +13,7 @@
     border-radius: 10px;
 }
 
-input {
+.weather input {
     margin: 20px;
     padding: 5px;
     background-color: rgb(187, 238, 255);
