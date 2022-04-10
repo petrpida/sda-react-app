@@ -21,6 +21,7 @@ import Exercise3 from './sharedComponents/ReactTraining/exercise3';
 import Weather from './sharedComponents/Weather';
 import PhoneInput from './sharedComponents/PhoneInput';
 import ToDoList from './sharedComponents/ToDoList';
+import ContactsList from './sharedComponents/ContactList';
 
 function App() {
   return (
@@ -74,6 +75,8 @@ function App() {
 
           <Route exact path="/phone" element={<PhoneInput/>}/>
           <Route exact path="/todo" element={<ToDoList/>}/>
+          <Route exact path="/contacts" element={<ContactsList/>}/>
+
 
 
 

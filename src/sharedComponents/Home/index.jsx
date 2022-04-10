@@ -21,7 +21,7 @@ export default function Home() {
       <NavButton name="Weather App" link="/weather"/>
       <NavButton name="Phone number validation" link="/phone"/>
       <NavButton name="ToDo List" link="/todo"/>
-
+      <NavButton name="Contact List" link="/contacts"/>
 
     </div>
   );

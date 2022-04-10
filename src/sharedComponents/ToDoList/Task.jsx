@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Task({ name, remove }) {
+export default function Task({ name, remove, id }) {
     const [done, setDone] = useState(false)
 
     return(

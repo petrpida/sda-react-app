@@ -4,11 +4,8 @@ import Task from "./Task";
 export default function ToDoList() {
   const [inputValue, setInputValue] = useState("");
   const [tasksArray, setTasksArray] = useState([]);
-  const [index, setIndex] = useState(0)
 
   console.log(tasksArray)
-  console.log(index)
-
 
   return (
     <div className="bg-light">
@@ -29,21 +26,24 @@ export default function ToDoList() {
         <button
           className="btn btn-primary"
           onClick={function () {
-            tasksArray.push( // zkusit sem pushnout celou komponentu Task
-              <Task key={index} name={inputValue} isDone={false} remove={function() {
-                const newArr = [...tasksArray];
-                newArr.splice(newArr[{index}],1);
-                setTasksArray(newArr)
-              }} />
+            const newArray = [...tasksArray]
+            newArray.push({
+              name: inputValue,
+              isDone: false,
+            }
             );
-            setIndex(index+1)
+            setTasksArray(newArray)
           }}
         >
           Submit
         </button>
 
       <div> 
-        {tasksArray}
+        { tasksArray.map((el, index) => <Task key={index} name={el.name} isDone={el.isDone} remove={function({index}) {
+                const newArr = [...tasksArray];
+                newArr.splice(newArr[{index}],1);
+                setTasksArray(newArr)
+              }} />)}
       </div>
     </div>
   );
