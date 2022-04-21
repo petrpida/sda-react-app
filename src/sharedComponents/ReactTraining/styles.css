@@ -1,0 +1,18 @@
+.training-ul {
+    padding: 1px;
+    border: 1px solid gray;
+    width: min-content;
+}
+.training-li {
+    list-style-position: inside;
+    width: 150px;
+    padding: 25px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.training-li:last-child {
+    border-bottom: 1px solid gray;
+    
+}

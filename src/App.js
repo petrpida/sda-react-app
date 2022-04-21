@@ -22,6 +22,10 @@ import Weather from './sharedComponents/Weather';
 import PhoneInput from './sharedComponents/PhoneInput';
 import ToDoList from './sharedComponents/ToDoList';
 import ContactsList from './sharedComponents/ContactList';
+import Exercise4 from './sharedComponents/ReactTraining/exercise4';
+import Exercise5 from './sharedComponents/ReactTraining/exercise5';
+import Exercise6 from './sharedComponents/ReactTraining/exercise6';
+import Exercise7 from './sharedComponents/ReactTraining/exercise7';
 
 function App() {
   return (
@@ -72,7 +76,11 @@ function App() {
           <Route exact path="/reacttraining/exercise1" element={<Exercise1/>}/>
           <Route exact path="/reacttraining/exercise2" element={<Exercise2/>}/>
           <Route exact path="/reacttraining/exercise3" element={<Exercise3/>}/>
-
+          <Route exact path="/reacttraining/exercise4" element={<Exercise4/>}/>
+          <Route exact path="/reacttraining/exercise5" element={<Exercise5/>}/>
+          <Route exact path="/reacttraining/exercise6" element={<Exercise6 arr={["dog", "cat", "chicken", "cow", "sheep", "horse"]}/>}/>
+          <Route exact path="/reacttraining/exercise7" element={<Exercise7/>}/>
+            
           <Route exact path="/phone" element={<PhoneInput/>}/>
           <Route exact path="/todo" element={<ToDoList/>}/>
           <Route exact path="/contacts" element={<ContactsList/>}/>

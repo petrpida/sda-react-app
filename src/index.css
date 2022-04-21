@@ -85,6 +85,7 @@ ol, ul {
 .menu {
   padding: 5px;
   margin: 10px;
+  margin-inline-end: 0px;
   display: block;
   border-radius: 10px;
   background-color: aqua;

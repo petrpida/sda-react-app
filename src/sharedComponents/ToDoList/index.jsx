@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Task from "./Task";
+import NavButton from '../NavButton'
 
 export default function ToDoList() {
   const [inputValue, setInputValue] = useState("");
@@ -34,23 +35,22 @@ export default function ToDoList() {
   }
 
   return (
-    <div className="bg-light">
+    <div>
+    <div className="bg-light mb-5">
       <h1 className="text-center">ToDo List</h1>
       <div className="mb-3">
-        <label className="form-label">Add new task</label>
         <input
           type="text"
-          className="form-control"
+          className="form-control ms-3"
           placeholder="enter new task"
           onChange={function (event) {
             setInputValue(event.target.value);
           }}
         />
       </div>
-      <button className="btn btn-primary" onClick={submitForm}>
+      <button className="btn btn-lg btn-primary ms-3 mb-3" onClick={submitForm}>
         Submit
       </button>
-
       <div>
         {tasksArray.map((el, index) => (
           <Task
@@ -62,6 +62,8 @@ export default function ToDoList() {
           />
         ))}
       </div>
+    </div>
+      <NavButton name="HOME" link="/"/>
     </div>
   );
 }
