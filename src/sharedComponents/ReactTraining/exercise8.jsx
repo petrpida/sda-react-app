@@ -1,4 +1,6 @@
 import React from "react";
+import NavButton from "../NavButton";
+import JokeExercise from "./JokeExercise";
 
 const data = [
   {
@@ -17,7 +19,14 @@ export default function Exercise8 () {
 
   return (
     <div>
-      ahoj
+      <h1 className="mb-5">Exercise 8: Rendering JSON</h1>
+    <div className=" bg-success p-2 text-dark bg-opacity-25 rounded mb-5">
+      <div className="row">
+        {data.map((el, index) => (<JokeExercise key={index} title={el.setup} text={el.punchline}/>))}
+      </div>
+    </div>
+    <NavButton name="Back" link="/reacttraining"/>
+    <NavButton name="HOME" link="/"/>
     </div>
   )
 }
