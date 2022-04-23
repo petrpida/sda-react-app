@@ -22,9 +22,12 @@ export default function ToDoList() {
 
   const markTask = (index) => {
     const newArray = [...tasksArray];
-    console.log(index)
 
-    newArray[index].isDone = true;
+    if (!newArray[index].isDone) {
+      newArray[index].isDone = true;}
+    else {
+      newArray[index].isDone = false;
+    }
     setTasksArray(newArray);
   };
 
@@ -36,13 +39,13 @@ export default function ToDoList() {
 
   return (
     <div>
-    <div className="bg-light mb-5">
-      <h1 className="text-center">ToDo List</h1>
+    <div className="bg-light mb-5 pt-5 pb-3">
+      <h1 className="text-center mb-5">ToDo List</h1>
       <div className="mb-3">
         <input
           type="text"
-          className="form-control ms-3"
-          placeholder="enter new task"
+          className="form-control form-control-lg ms-3 me-5 w-97"
+          placeholder="ENTER NEW TASK"
           onChange={function (event) {
             setInputValue(event.target.value);
           }}
@@ -51,7 +54,7 @@ export default function ToDoList() {
       <button className="btn btn-lg btn-primary ms-3 mb-3" onClick={submitForm}>
         Submit
       </button>
-      <div>
+      <div className="mt-3 ms-3 w-97">
         {tasksArray.map((el, index) => (
           <Task
             key={index}

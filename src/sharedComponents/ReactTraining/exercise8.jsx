@@ -1,3 +1,5 @@
+import React from "react";
+
 const data = [
   {
     id: "1",
@@ -10,5 +12,14 @@ const data = [
     punchline: "Because they need to C#"
   }
 ];
+
+export default function Exercise8 () {
+
+  return (
+    <div>
+      ahoj
+    </div>
+  )
+}
 
 
