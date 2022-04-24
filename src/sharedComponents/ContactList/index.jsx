@@ -12,7 +12,8 @@ function getCountries() {
     return countries
 }
 
-export default function ContactsList() {const nameInputRef = useRef();
+export default function ContactsList() {
+  const nameInputRef = useRef();
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(20);
   const [inputValue, setInputValue] = useState("");
