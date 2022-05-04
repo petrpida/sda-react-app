@@ -1,0 +1,30 @@
+export const teams = [
+  { id: 1, team: 'Sparta Praha' },
+  { id: 2, team: 'Slavia Praha' },
+  { id: 3, team: 'Baník Ostrava' },
+  { id: 4, team: 'Viktoria Plzeň' },
+  { id: 5, team: 'Sigma Olomouc' },
+]
+
+export const games = [
+  { id: 1, date: '2022-03-22', homeTeam: 1, awayTeam: 2, homeTeamGoals: 9, awayTeamGoals: 5 },
+  { id: 2, date: '2022-02-12', homeTeam: 1, awayTeam: 3, homeTeamGoals: 1, awayTeamGoals: 1 },
+  { id: 3, date: '2022-01-18', homeTeam: 1, awayTeam: 4, homeTeamGoals: 2, awayTeamGoals: 0 },
+  { id: 4, date: '2022-04-04', homeTeam: 1, awayTeam: 5, homeTeamGoals: 1, awayTeamGoals: 1 },
+  { id: 5, date: '2022-03-15', homeTeam: 2, awayTeam: 1, homeTeamGoals: 0, awayTeamGoals: 2 },
+  { id: 6, date: '2022-02-08', homeTeam: 2, awayTeam: 3, homeTeamGoals: 3, awayTeamGoals: 2 },
+  { id: 7, date: '2022-01-31', homeTeam: 2, awayTeam: 4, homeTeamGoals: 2, awayTeamGoals: 3 },
+  { id: 8, date: '2022-03-07', homeTeam: 2, awayTeam: 5, homeTeamGoals: 0, awayTeamGoals: 0 },
+  { id: 9, date: '2022-04-01', homeTeam: 3, awayTeam: 1, homeTeamGoals: 1, awayTeamGoals: 1 },
+  { id: 10, date: '2022-02-09', homeTeam: 3, awayTeam: 2, homeTeamGoals: 2, awayTeamGoals: 0 },
+  { id: 11, date: '2022-03-02', homeTeam: 3, awayTeam: 4, homeTeamGoals: 0, awayTeamGoals: 5 },
+  { id: 12, date: '2022-03-11', homeTeam: 3, awayTeam: 5, homeTeamGoals: 4, awayTeamGoals: 1 },
+  { id: 13, date: '2022-01-15', homeTeam: 4, awayTeam: 1, homeTeamGoals: 3, awayTeamGoals: 3 },
+  { id: 14, date: '2022-04-14', homeTeam: 4, awayTeam: 2, homeTeamGoals: 0, awayTeamGoals: 1 },
+  { id: 15, date: '2022-02-22', homeTeam: 4, awayTeam: 3, homeTeamGoals: 2, awayTeamGoals: 1 },
+  { id: 16, date: '2022-02-14', homeTeam: 4, awayTeam: 5, homeTeamGoals: 1, awayTeamGoals: 2 },
+  { id: 17, date: '2022-03-31', homeTeam: 5, awayTeam: 1, homeTeamGoals: 2, awayTeamGoals: 0 },
+  { id: 18, date: '2022-04-30', homeTeam: 5, awayTeam: 2, homeTeamGoals: 4, awayTeamGoals: 3 },
+  { id: 19, date: '2022-04-29', homeTeam: 5, awayTeam: 3, homeTeamGoals: 1, awayTeamGoals: 0 },
+  { id: 20, date: '2022-02-28', homeTeam: 5, awayTeam: 4, homeTeamGoals: 1, awayTeamGoals: 4 },
+]

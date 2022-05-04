@@ -28,6 +28,9 @@ import Exercise6 from './sharedComponents/ReactTraining/exercise6';
 import Exercise7 from './sharedComponents/ReactTraining/exercise7';
 import Exercise8 from './sharedComponents/ReactTraining/exercise8';
 import Exercise9 from './sharedComponents/ReactTraining/exercise9';
+import Games from './sharedComponents/Football/games';
+import Teams from './sharedComponents/Football/teams';
+import Ranking from './sharedComponents/Football/ranking';
 
 function App() {
   return (
@@ -89,11 +92,10 @@ function App() {
           <Route exact path="/todo" element={<ToDoList/>}/>
           <Route exact path="/contacts" element={<ContactsList/>}/>
 
+          <Route exact path="/teams" element={<Teams/>}/>
+          <Route exact path="/games" element={<Games/>}/>
+          <Route exact path="/ranking" element={<Ranking/>}/>
 
-
-
-
-          
         </Routes>
       </Router>
     </div>

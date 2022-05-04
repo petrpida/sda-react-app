@@ -22,6 +22,8 @@ export default function Home() {
       <NavButton name="Phone number validation" link="/phone"/>
       <NavButton name="ToDo List" link="/todo"/>
       <NavButton name="Contact List" link="/contacts"/>
+      <NavButton name="Football League" link="/teams"/>
+
 
     </div>
   );

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #222222;
+  background: #efefef;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  margin: 0;
+}
+
+nav > div {
+  font-size: 1.4rem;
+}
+nav > ul a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav > ul a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.container > ul {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+}
+
+.container > ul li {
+  padding: .5em .75em;
+  text-align: center;
+}
+
+.container > ul li:not(:last-child) {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.container > ul li:nth-child(even) {
+  background: #efefef;
+}
+
+.container table {
+  border: 1px solid #bababa;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.container table th {
+  background: #cdcdcd;
+  border: none;
+  text-align: center;
+  padding: 1em;
+}
+.container table tr {
+  border-bottom: 1px solid #cdcdcd;
+}
+.container table tr:nth-child(even) {
+  background: #efefef;
+}
+
+.container table td {
+  padding: 1em;
+  text-align: center;
+}
