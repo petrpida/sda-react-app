@@ -14,10 +14,7 @@ export default function Teams() {
 
   return (
     <div>
-      <nav>
-        <div>Naše liga</div>
-        <NavBar/>
-      </nav>
+        <NavBar active="teams"/>
       <main>
         <div className="container">
           <ul>

@@ -84,7 +84,6 @@ ol, ul {
 
 .menu {
   padding: 5px;
-  margin: 10px;
   margin-inline-end: 0px;
   display: block;
   border-radius: 10px;
@@ -92,8 +91,15 @@ ol, ul {
   width: 200px;
 }
 
+.menuButton {
+  width: min-content;
+  margin: 20px;
+
+}
+
 .menu:hover {
   background-color: rgb(9, 214, 214);
+  cursor: default;
 }
 
 a {

@@ -13,7 +13,7 @@ export const games = [
   { id: 4, date: '2022-04-04', homeTeam: 1, awayTeam: 5, homeTeamGoals: 1, awayTeamGoals: 1 },
   { id: 5, date: '2022-03-15', homeTeam: 2, awayTeam: 1, homeTeamGoals: 0, awayTeamGoals: 2 },
   { id: 6, date: '2022-02-08', homeTeam: 2, awayTeam: 3, homeTeamGoals: 3, awayTeamGoals: 2 },
-  { id: 7, date: '2022-01-31', homeTeam: 2, awayTeam: 4, homeTeamGoals: 2, awayTeamGoals: 3 },
+  { id: 7, date: '2022-01-31', homeTeam: 2, awayTeam: 4, homeTeamGoals: 2, awayTeamGoals: 4 },
   { id: 8, date: '2022-03-07', homeTeam: 2, awayTeam: 5, homeTeamGoals: 0, awayTeamGoals: 0 },
   { id: 9, date: '2022-04-01', homeTeam: 3, awayTeam: 1, homeTeamGoals: 1, awayTeamGoals: 1 },
   { id: 10, date: '2022-02-09', homeTeam: 3, awayTeam: 2, homeTeamGoals: 2, awayTeamGoals: 0 },

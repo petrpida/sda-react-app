@@ -1,16 +1,13 @@
 * {
   box-sizing: border-box;
 }
-
 html, body {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: sans-serif;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,37 +17,31 @@ nav {
   background: #efefef;
   border-bottom: 1px solid #cdcdcd;
 }
-
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 nav > ul {
   display: flex;
   margin: 0;
 }
-
 nav > div {
   font-size: 1.4rem;
 }
 nav > ul a {
   display: block;
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   padding: 10px;
   margin: 10px;
 }
-
 nav > ul a:hover {
   text-decoration: underline;
 }
-
 .container {
   margin-top: 50px;
 }
-
 .container > ul {
   display: block;
   width: 50%;
@@ -58,20 +49,16 @@ nav > ul a:hover {
   border: 1px solid #bababa;
   border-radius: 5px;
 }
-
 .container > ul li {
   padding: .5em .75em;
   text-align: center;
 }
-
 .container > ul li:not(:last-child) {
   border-bottom: 1px solid #cdcdcd;
 }
-
 .container > ul li:nth-child(even) {
   background: #efefef;
 }
-
 .container table {
   border: 1px solid #bababa;
   margin: 0 auto;
@@ -89,8 +76,24 @@ nav > ul a:hover {
 .container table tr:nth-child(even) {
   background: #efefef;
 }
-
 .container table td {
   padding: 1em;
   text-align: center;
+}
+nav .football{
+  display: flex;
+  margin-left: 20px;
+}
+nav .football div {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+nav .football img {
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+}
+
+li .active-link {
+  font-weight: bold;
 }

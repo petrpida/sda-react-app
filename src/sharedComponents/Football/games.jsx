@@ -12,21 +12,6 @@ export default function Games() {
     });
   }
 
-  const monthNames = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-
   function formatDate(date) {
     const ar = date.split("-");
 
@@ -36,10 +21,7 @@ export default function Games() {
 
   return (
     <div>
-      <nav>
-        <div>Naše liga</div>
-        <NavBar />
-      </nav>
+        <NavBar active="games"/>
       <main>
         <div className="container">
           <table>

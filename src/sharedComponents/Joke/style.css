@@ -1,0 +1,11 @@
+.joke {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 70%;
+    font-size: 1.5rem;
+}

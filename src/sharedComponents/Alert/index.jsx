@@ -16,7 +16,7 @@ export default function Alert({ show, text, color }) {
 
   if (show) {
     return (
-      <div>
+      <div className="m-5">
         <div className={backgroundColor} role="alert">
           This is alert no.{params.id}: <br /> <br /> "{text}"
         </div>

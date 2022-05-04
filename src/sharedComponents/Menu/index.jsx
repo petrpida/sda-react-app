@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import NavButton from "../NavButton";
 
 export default function Menu({ menuName, menuItems }) {
@@ -11,14 +12,15 @@ export default function Menu({ menuName, menuItems }) {
       <ul className="navbar-nav mr-auto">
         {menuItems.map((item) => (
           <li className="nav-item">
-            <a
+            <Link
+              to={"../" + item}
               className={'nav-link' + (activeItem === item ? " active" : "")}
               onClick={function () {
                 setActiveItem(item);
               }}
             >
               {item}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
