@@ -25,7 +25,7 @@ export default function Joke() {
     <div className="container">
       <h2>Chuch Norris Joke</h2>
         {joke === "" ? <p></p> :  <p className="joke">{joke}</p>}
-      <button className="btn btn-warning btn-lg" onClick={()=>{getJoke()}}>{joke === "" ? "Give Me A Joke" : "Give Me One More"}</button>
+      <button className="btn btn-primary btn-lg" onClick={()=>{getJoke()}}>{joke === "" ? "Give Me A Joke" : "Give Me One More"}</button>
       <NavButton name="HOME" link="/" />
     </div>
   );
