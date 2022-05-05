@@ -5,7 +5,9 @@ export default function Button({ buttonName, disableCounter, onClick }) {
   
 
   return (
-    <div><button
+    <div className="container">
+      <button
+      className="btn btn-primary w-50"
       onClick={function () {
         //window.alert((buttonName) + " was just clicked");
         counter = counter + 1
@@ -16,7 +18,7 @@ export default function Button({ buttonName, disableCounter, onClick }) {
     >
       {buttonName}
     </button>
-    {(disableCounter === false ? <p>na tlacitko {buttonName} bylo kliknuto {counter}x</p> : <p></p>)}
+    {(disableCounter === false ? <p>"{buttonName}" button was clicked {counter} times</p> : <p></p>)}
     
     </div>
   );

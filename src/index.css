@@ -63,25 +63,6 @@ ol, ul {
   margin-left: 20px;
 }
 
-.myTable td {
-  border: black 1px solid;
-  padding: 10px;
-}
-
-.myTable th {
-  border: black 2px solid;
-  padding: 10px;
-  background-color: rgb(146, 223, 130);
-}
-
-.myTable tbody > :nth-child(even) {
-  background-color: rgb(187, 187, 187);
-}
-
-.myTable tbody > tr:hover {
-  background-color: rgb(255, 219, 16);
-}
-
 .menu {
   padding: 5px;
   margin-inline-end: 0px;
@@ -93,7 +74,7 @@ ol, ul {
 
 .menuButton {
   width: min-content;
-  margin: 20px;
+  margin: 20px auto;
 
 }
 

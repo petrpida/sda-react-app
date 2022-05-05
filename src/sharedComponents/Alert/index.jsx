@@ -17,8 +17,9 @@ export default function Alert({ show, text, color }) {
   if (show) {
     return (
       <div className="m-5">
-        <div className={backgroundColor} role="alert">
-          This is alert no.{params.id}: <br /> <br /> "{text}"
+        <div className={backgroundColor + " text-center w-75 mx-auto"} role="alert">
+          This is alert no.{params.id}
+          <div className="pt-3">{text}</div> 
         </div>
         <NavButton name="HOME" link="/"/>
       </div>

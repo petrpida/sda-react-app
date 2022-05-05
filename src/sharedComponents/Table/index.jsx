@@ -18,9 +18,9 @@ export default function Table({ rows, columns }) {
   }
 
   return (
-    <div>
-      <div className="myTable">
-        <table>
+    <div className="myTable">
+      <div className="container">
+        <table className="table table-primary table-hover">
           <thead>
             <tr>{ths}</tr>
           </thead>

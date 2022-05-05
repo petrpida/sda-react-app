@@ -9,11 +9,11 @@ export default function Menu({ menuName, menuItems }) {
     <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       {menuName}
-      <ul className="navbar-nav mr-auto">
+      <ul className="navbar-nav me-auto ms-5">
         {menuItems.map((item) => (
           <li className="nav-item">
             <Link
-              to={"../" + item}
+              to=""
               className={'nav-link' + (activeItem === item ? " active" : "")}
               onClick={function () {
                 setActiveItem(item);

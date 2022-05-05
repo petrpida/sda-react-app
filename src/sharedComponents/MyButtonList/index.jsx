@@ -12,17 +12,19 @@ export default function MyButtonList({ buttonsObject }) {
         buttonName={buttonsObject[i].text}
         disableCounter={buttonsObject[i].disableCounter}
         onClick={function () {
-          totalCount = totalCount + 1;
-          setTotalCount(totalCount);
+          //totalCount = totalCount + 1;
+          setTotalCount(totalCount+=1);
         }}
       />
     );
   }
 
   return (
-    <div>
+    <div className="container">
+      <div className="border border-secondary border-1 rounded w-75">
       {buttons}
-      <p>dohromady bylo kliknuto: {totalCount}x</p>
+      <p className="text-center fs-5 my-3">all button clicks: {totalCount}</p>
+      </div>
       <NavButton name="HOME" link="/" />
     </div>
   );

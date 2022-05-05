@@ -51,7 +51,7 @@ function App() {
       {/* <Table rows={6} columns={4}/> */}
       <Router>
         <Routes>
-          <Route exact path="/alert/:id" element={<Alert show={true} text="text of alert" color={"red"}/>}/>
+          <Route exact path="/alert/:id" element={<Alert show={true} text="text of alert" color="red"/>}/>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/counter" element={<Counter/>}/>
           <Route exact path="/joke" element={<Joke/>}/>
@@ -59,17 +59,17 @@ function App() {
           <Route exact path="/news" element={<News/>}/>
           <Route path="/news/:id" element={<NewsEditForm/>} />
           <Route exact path="/tictactoe" element={<Game gameName="TicTacToe" players={2}/>}/>
-          <Route exact path="/menu" element={<Menu menuName="SDA" menuItems={["odkaz1", "odkaz2", "odkaz3"]}/>}/>
+          <Route exact path="/menu" element={<Menu menuName="SDA Menu" menuItems={["Link 1", "Link 2", "Link 3"]}/>}/>
           <Route exact path="/table" element={<Table rows={3} columns={9} />} />
           <Route
             path="/buttons"
             element={
               <MyButtonList
                 buttonsObject={[
-                  { text: "load", disableCounter: true },
-                  { text: "send", disableCounter: true },
-                  { text: "reset", disableCounter: true },
-                  { text: "cancel", disableCounter: false }
+                  { text: "load", disableCounter: false },
+                  { text: "send", disableCounter: false },
+                  { text: "reset", disableCounter: false },
+                  { text: "cancel", disableCounter: true }
                 ]}
               />
             }
