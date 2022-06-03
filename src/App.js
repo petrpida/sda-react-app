@@ -31,6 +31,7 @@ import Exercise9 from './sharedComponents/ReactTraining/exercise9';
 import Games from './sharedComponents/Football/games';
 import Teams from './sharedComponents/Football/teams';
 import Ranking from './sharedComponents/Football/ranking';
+import Signed from './sharedComponents/SignInForm/signed';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/counter" element={<Counter/>}/>
           <Route exact path="/joke" element={<Joke/>}/>
           <Route exact path="/form" element={<SignInForm/>}/>
+          <Route exact path="/form/signed" element={<Signed/>}/>
           <Route exact path="/news" element={<News/>}/>
           <Route path="/news/:id" element={<NewsEditForm/>} />
           <Route exact path="/tictactoe" element={<Game gameName="TicTacToe" players={2}/>}/>
