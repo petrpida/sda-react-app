@@ -19,8 +19,8 @@ export default function Exercise8 () {
 
   return (
     <div>
-      <h1 className="mb-5">Exercise 8: Rendering JSON</h1>
-    <div className=" bg-success p-2 text-dark bg-opacity-25 rounded mb-5">
+      <h1 className="m-5 text-center">Exercise 8: Rendering JSON</h1>
+    <div className=" bg-success p-2 text-dark bg-opacity-25 rounded m-5">
       <div className="row">
         {data.map((el, index) => (<JokeExercise key={index} title={el.setup} text={el.punchline}/>))}
       </div>

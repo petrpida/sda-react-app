@@ -3,9 +3,9 @@ import NavButton from "../NavButton";
 
 export default function ReactTraning() {
   return (
-    <div>
+    <div className="container">
       <h1>React Training</h1>
-      <h6>source: <a href="http://coderfiles.dev/blog/reactjs-coding-exercises/">coderfiles.dev</a></h6>
+      <h6>source: <a className="text-decoration-underline" target="_blank" rel="noreferrer" href="http://coderfiles.dev/blog/reactjs-coding-exercises/">coderfiles.dev</a></h6>
       <NavButton name="Exercise 1" link="./exercise1"/>
       <NavButton name="Exercise 2" link="./exercise2"/>
       <NavButton name="Exercise 3" link="./exercise3"/>

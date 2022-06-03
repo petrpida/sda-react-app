@@ -3,9 +3,8 @@ import NavButton from "../NavButton";
 
 export default function Home() {
   return (
-    <div>
-      <h1>HOME page </h1>
-      
+    <div className="container">
+      <h1>HOME page</h1>
       <NavButton name="Bootstrap Alert" link="/alert/1"/>
       <NavButton name="Counter" link="/counter"/>
       <NavButton name="Chuck Norris joke" link="/joke"/>
@@ -23,8 +22,6 @@ export default function Home() {
       <NavButton name="ToDo List" link="/todo"/>
       <NavButton name="Contact List" link="/contacts"/>
       <NavButton name="Football League" link="/teams"/>
-
-
     </div>
   );
 }

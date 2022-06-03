@@ -7,19 +7,8 @@ function Counter() {
   const counter = state[0];
   const setCounter = state[1];
 
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-
   return (
     <div className="container counter">
-      <h2>
-        My name and surname is: 
-      </h2>
-      <h3>{name} {surname}</h3>
-      <label>Name</label>
-      <input type="text" onChange={(e) => setName(e.target.value)} />
-      <label>Surname</label>
-      <input type="text" onChange={(e) => setSurname(e.target.value)} />
       <div className="d-flex flex-column p-3 border border-2 rounded">
         <div>
         <button className="btn btn-primary m-1" onClick={() => setCounter(counter - 1)}>

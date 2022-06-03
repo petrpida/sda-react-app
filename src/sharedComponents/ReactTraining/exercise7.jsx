@@ -19,8 +19,8 @@ export default function Exercise7 () {
 
     return (
         <div>
-            <h1 className="mb-5">Exercise 7: Building A Form</h1>
-            <form className="mb-5 ms-3">
+            <h1 className="m-5 text-center">Exercise 7: Building A Form</h1>
+            <form className="mb-5 d-flex flex-column align-items-center">
                 <input className="form-control w-25 mb-3" type="text" placeholder="First name" onChange={(event)=>{setFirstName(event.target.value)}}/>
                 <input className="form-control w-25 mb-3" type="text" placeholder="Last name" onChange={(event)=>{setLastName(event.target.value)}}/>
                 <button className="btn btn-primary w-25" onClick={greet} >Greet Me!</button>

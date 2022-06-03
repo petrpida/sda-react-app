@@ -1,7 +1,5 @@
-- sign in form - useNavigate() - add new component for signed users (./signed)
 - tic tac toe - finish it and style it or delete it
 - search filter - styling
-- react training - styling + useEffect in exercise 9
 - weather app - style button + add weather icon
 - phone number validation - style + get new key to fetch data from API
 - contact list - styling
